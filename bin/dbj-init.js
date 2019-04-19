@@ -70,7 +70,7 @@ function downloadAndGenerate() {
   if (exists(tmp)) {
     rm(tmp)
   }
-  download('zhaowenhao/dbj-vue-template', tmp, err => {
+  download('dbj-fe/dbj-vue-template', tmp, err => {
     spinner.stop()
     if (err) {
       logger.fatal('Failed to download repo ' + template + ': ' + err.message.trim())
